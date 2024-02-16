@@ -26,7 +26,7 @@ power_counter = 0 # timer
 eaten_ghost = [False, False, False, False] # ghost states
 moving = False # moving state
 startup_counter = 0 # counter
-lives = 3
+lives = 3 # lives
 blinky_dead = False
 inky_dead = False
 pinky_dead = False
@@ -43,3 +43,71 @@ game_won = False
 player_x = 450
 player_y = 663
 player_speed = 2
+
+# targets of ghosts
+targets = [
+    (player_x, player_y),
+    (player_x, player_y),
+    (player_x, player_y),
+    (player_x, player_y)
+]
+
+# other player variables
+direction = 0
+counter = 0
+direction_command = 0
+
+# framerate
+timer = pygame.time.Clock()
+fps = 60
+
+# animations
+player_images = []
+
+for i in range(1, 5): 
+    player_images.append(pygame.transform.scale(pygame.image.load(f'./Pacman Python/assets/player_images/{i}.png'), (45, 45)))
+
+# ghost assets
+blinky_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/red.png"), (45, 45))
+blinky_x = 56
+blinky_y = 58
+blinky_direction = 0
+
+pinky_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/pink.png"), (45, 45))
+pinky_x = 440
+pinky_y = 438
+pinky_direction = 2
+
+inky_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/blue.png"), (45, 45))
+inky_x = 440
+inky_y = 388
+inky_direction = 2
+
+clyde_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/orange.png"), (45, 45))
+clyde_x = 440
+clyde_y = 438
+clyde_direction = 2
+
+spooked_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/powerup.png"), (45, 45))
+dead_img = pygame.transform.scale(pygame.image.load("./Pacman Python/assets/ghost_images/dead.png"), (45, 45))
+
+ghost_speeds = [2, 2, 2, 2]
+
+
+
+
+
+# Ghost class
+class Ghost:
+    def __init__(self, x_coord, y_coord, target, speed, img, direct, dead, box, id):
+
+#має уміть двигатись орієнтуватись в лабіринті все те шо має умінь реальний привид пакмена
+    def draw(self):
+
+    def check_collisions(self):
+    # R, L, U, D
+        
+    def move_clyde(self):
+
+
+# main game loop
