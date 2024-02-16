@@ -98,16 +98,9 @@ ghost_speeds = [2, 2, 2, 2]
 
 
 # Ghost class
-class Ghost:
-    def __init__(self, x_coord, y_coord, target, speed, img, direct, dead, box, id):
-
 #має уміть двигатись орієнтуватись в лабіринті все те шо має умінь реальний привид пакмена
-    def draw(self):
 
-    def check_collisions(self):
-    # R, L, U, D
-        
-    def move_clyde(self):
-
+#логіка предвигання гравця
 
 # main game loop
+# основна логіка ігри
