@@ -44,6 +44,10 @@ player_x = 450
 player_y = 663
 player_speed = 2
 
+# framerate
+timer = pygame.time.Clock()
+fps = 60
+
 # main game loop 
 
 run = True
