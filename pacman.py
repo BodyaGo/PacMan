@@ -116,7 +116,18 @@ def draw_board():
             if level[i][j] == 8:
                 pygame.draw.arc(screen, color, [(j*num2 - (num2*0.4)) - 2, (i*num1 - (num1*0.4)), num2, num1], 3*PI/2, 2*PI, 3) 
             if level[i][j] == 9:
-              
+              pass
+
+def draw_player():
+    if direction == 0: # RIGHT
+        screen.blit(player_images[counter // 5], (player_x, player_y))
+    if direction == 1: # LEFT
+        screen.blit(pygame.transform.flip(player_images[counter // 5], True, False), (player_x, player_y))
+    if direction == 2: # UP
+        screen.blit(pygame.transform.rotate(player_images[counter // 5], 90), (player_x, player_y))
+    if direction == 3: # DOWN
+        screen.blit(pygame.transform.rotate(player_images[counter // 5], 270), (player_x, player_y))
+
 
 # main game loop 
 
