@@ -38,3 +38,8 @@ clyde_box = False
 ghost_speed = 2
 game_over = False
 game_won = False
+
+# starting pos, speed
+player_x = 450
+player_y = 663
+player_speed = 2
