@@ -44,4 +44,4 @@ player_x = 450
 player_y = 663
 player_speed = 2
 
-dima = 'vot moya nerealnaya variable'
+dima = 'vot moya nerealnaya variable' 
