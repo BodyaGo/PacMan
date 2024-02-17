@@ -44,4 +44,38 @@ player_x = 450
 player_y = 663
 player_speed = 2
 
-dima = 'vot moya nerealnaya variable' 
+# Ghost class
+
+class Ghost:
+    def __init__(self, x_coord, y_coord, target, speed, img, direct, dead, box, id):
+        self.x_pos = x_coord
+        self.y_pos = y_coord
+        self.center_x = self.x_pos + 22
+        self.center_y = self.y_pos + 22
+        self.target = target
+        self.speed = speed
+        self.img = img
+        self.direction = direct
+        self.dead = dead
+        self.in_box = box
+        self.id = id
+        self.turns, self.in_box = self.check_collisions()
+        self.rect = self.draw()
+
+    def draw(self):
+        pass
+
+    def check_collisions(self):
+        pass
+
+    def move_clyde(self):
+        pass
+
+    def move_blinky(self):
+        pass
+
+    def move_inky(self):
+        pass
+
+    def move_pinky(self):
+        pass  
