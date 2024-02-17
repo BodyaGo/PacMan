@@ -713,12 +713,12 @@ class Ghost:
             screen.blit(pygame.transform.rotate(player_images[counter // 5], 90), (player_x, player_y))
         elif direction == 3:
             screen.blit(pygame.transform.rotate(player_images[counter // 5], 270), (player_x, player_y))
-            
-    def check_position(centerx, centery):
-        turns = [False, False, False, False]
-        num1 = (HEIGHT - 50) // 32
-        num2 = (WIDTH // 30)
-        num3 = 15
+
+   def check_position(centerx, centery):
+    turns = [False, False, False, False]
+    num1 = (HEIGHT - 50) // 32
+    num2 = (WIDTH // 30)
+    num3 = 15
     # check collisions based on center x and center y of player +/- fudge number
     if centerx // 30 < 29:
         if direction == 0:
