@@ -4,6 +4,7 @@ from board import boards
 
 pygame.init()
 
+
 # settings variables: screen, framerates, fonts etc...
 
 # resolution, display
