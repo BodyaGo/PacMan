@@ -1188,7 +1188,7 @@ while run:
                 pinky_dead = False
                 score = 0
                 lives = 3
-                level = copy.deepcopy(boards)
+                level = boards
                 game_over = False
                 game_won = False
 
