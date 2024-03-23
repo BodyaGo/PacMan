@@ -100,7 +100,7 @@ fps = 60
 player_images = []
 
 for i in range(1, 5): 
-    player_images.append(pygame.transform.scale(pygame.image.load(f'./PacManGroup/assets/player_images/{i}.png'), (45, 45)))
+    player_images.append(pygame.transform.scale(pygame.image.load(f'C:\Projects\PacManGroup\assets\player_images\{i}.png'), (45, 45)))
 
 # ghost assets 
 blinky_img = pygame.transform.scale(pygame.image.load("./PacManGroup/assets/ghost_images/red.png"), (45, 45))
