@@ -109,8 +109,7 @@ inky_img = pygame.transform.scale(pygame.image.load("./PacManGroup/assets/ghost_
 clyde_img = pygame.transform.scale(pygame.image.load("./PacManGroup/assets/ghost_images/orange.png"), (45, 45))
 spooked_img = pygame.transform.scale(pygame.image.load("./PacManGroup/assets/ghost_images/powerup.png"), (45, 45))
 dead_img = pygame.transform.scale(pygame.image.load("./PacManGroup/assets/ghost_images/dead.png"), (45, 45))
-
-# ghost assets
+ 
 blinky_x = 56
 blinky_y = 58
 blinky_direction = 0
